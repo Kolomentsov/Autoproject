@@ -12,6 +12,11 @@ namespace Automedon
         private static Login login = new Login();
         private static Sign_Up sign_up = new Sign_Up();
         private static Dealers dealer = new Dealers();
+        private static BMW bmw = new BMW();
+        private static Hyundai hyundai = new Hyundai();
+        private static Mercedes mersedes = new Mercedes();
+        private static Toyota toyota = new Toyota();
+        private static Contacts contacts = new Contacts();
 
         public static Login Login
         {
@@ -45,6 +50,63 @@ namespace Automedon
             }
         }
 
-    }
+        public static BMW BMW
+        {
+            get
+            {
+                return bmw;
+            }
+        }
 
+        public static Hyundai Hyundai
+        {
+            get
+            {
+                return hyundai;
+            }
+        }
+
+        public static Mercedes Mersedes
+        {
+            get
+            {
+                return mersedes;
+            }
+        }
+
+        public static Toyota Toyota
+        {
+            get
+            {
+                return toyota;
+            }
+        }
+
+        public static Contacts Contacts
+        {
+            get
+            {
+                return contacts;
+            }
+        }
+
+
+
+
+
+        public class Mark
+        {
+            public string Name { get; set; }
+            public string Country { get; set; }
+
+            public Mark()
+            { }
+
+            public Mark(string _name, string _country)
+            {
+                Name = _name;
+                Country = _country;
+            }
+        }
+    }
 }

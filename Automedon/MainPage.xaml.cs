@@ -45,5 +45,10 @@ namespace Automedon
         {
             label777.FontSize = 22;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.Contacts);
+        }
     }
 }

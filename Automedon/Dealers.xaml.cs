@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+
 
 namespace Automedon
 {
@@ -24,7 +26,9 @@ namespace Automedon
         public Dealers()
         {
             InitializeComponent();
+
         }
+
         List<Cars> carss;
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -81,6 +85,7 @@ namespace Automedon
                     Cars s = new Cars(items[0], items[1], items[2], int.Parse(items[3]));
                     carss.Add(s);
                     listBox1.Items.Add(s.Show());
+
                 }
                 MessageBox.Show("Загрузка завершена");
             }
@@ -88,6 +93,26 @@ namespace Automedon
             {
                 MessageBox.Show("Не удалоь выполнить загрузку");
             }
+        }
+
+        private void butt1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.BMW);
+        }
+
+        private void butt2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.Mersedes);
+        }
+
+        private void butt3_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.Hyundai);
+        }
+
+        private void butt4_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Pages.Toyota);
         }
     }
 }

@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Automedon"
       mc:Ignorable="d" 
-      d:DesignHeight="340" d:DesignWidth="585"
-      Title="Dealers" Background="#FFB99999">
+      d:DesignHeight="340"
+      Title="Dealers" Background="#FFB99999" Width="675">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -23,6 +23,11 @@
         <Button x:Name="button2" Content="Фильтр" HorizontalAlignment="Left" Margin="364,36,0,0" VerticalAlignment="Top" Width="153" Height="23" Grid.Column="1" Grid.Row="1" Click="button2_Click"/>
         <Button x:Name="button3" Content="Очистить поля" HorizontalAlignment="Left" Margin="364,131,0,0" VerticalAlignment="Top" Width="153" Height="21" Grid.Column="1" Grid.Row="1" Click="button3_Click"/>
         <TextBox x:Name="textBox1" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="364,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="153"/>
-        <Label x:Name="label" Content="Введите марку автомобиля" Grid.Column="1" HorizontalAlignment="Left" Margin="364,94,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label x:Name="label" Content="Введите марку автомобиля:" Grid.Column="1" HorizontalAlignment="Left" Margin="364,94,0,0" VerticalAlignment="Top" Width="165"/>
+        <Button x:Name="butt1" Content="BMW" Grid.Column="1" HorizontalAlignment="Left" Margin="548,72,0,0" VerticalAlignment="Top" Width="115" Height="37" Click="butt1_Click"/>
+        <Button x:Name="butt2" Content="Mercedes-Benz" Grid.Column="1" HorizontalAlignment="Left" Margin="548,126,0,0" VerticalAlignment="Top" Width="115" Height="42" Grid.RowSpan="2" Click="butt2_Click"/>
+        <Button x:Name="butt3" Content="Hyundai" Grid.Column="1" HorizontalAlignment="Left" Margin="548,50,0,0" Grid.Row="1" VerticalAlignment="Top" Width="115" Height="41" Click="butt3_Click"/>
+        <Button x:Name="butt4" Content="Toyota" Grid.Column="1" HorizontalAlignment="Left" Margin="548,112,0,0" Grid.Row="1" VerticalAlignment="Top" Width="115" Height="40" Click="butt4_Click"/>
+        <Label x:Name="label1" Content="Выбор атомобиля:" Grid.Column="1" HorizontalAlignment="Left" Margin="548,41,0,0" VerticalAlignment="Top" Width="115"/>
     </Grid>
 </Page>

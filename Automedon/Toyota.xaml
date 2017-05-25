@@ -1,0 +1,23 @@
+﻿<Page x:Class="Automedon.Toyota"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Automedon"
+      mc:Ignorable="d" 
+      d:DesignHeight="340" d:DesignWidth="675"
+      Title="Toyota" Background="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="135"/>
+            <ColumnDefinition Width="335"/>
+            <ColumnDefinition Width="135"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listBox"  Height="139" Margin="1,182,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="button1" Content="Нажмите для вывода списка" Background="#FFBB9696" HorizontalAlignment="Left" Margin="77,126,0,0" VerticalAlignment="Top" Width="203" Click="button1_Click" Grid.Column="1" Height="37"/>
+        <Label x:Name="label" Content="Toyota" Margin="95,42,82,0" VerticalAlignment="Top"  FontSize="40" Grid.Column="1"/>
+        <Image Source="Toyota.jpg" Grid.Column="2" Margin="48,0,-67,209"/>
+
+    </Grid>
+</Page>

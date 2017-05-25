@@ -55,10 +55,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BMW.xaml.cs">
+      <DependentUpon>BMW.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.xaml.cs">
+      <DependentUpon>Contacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hyundai.xaml.cs">
+      <DependentUpon>Hyundai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mercedes.xaml.cs">
+      <DependentUpon>Mercedes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Sign up.xaml.cs">
       <DependentUpon>Sign up.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Toyota.xaml.cs">
+      <DependentUpon>Toyota.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="World.cs" />
+    <Page Include="BMW.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Contacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dealers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hyundai.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,7 +123,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Mercedes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sign up.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toyota.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -128,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="lev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BMW.jpg" />
+    <Resource Include="hyundai.jpg" />
+    <Resource Include="mercedes.jpg" />
+    <Resource Include="Toyota.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
